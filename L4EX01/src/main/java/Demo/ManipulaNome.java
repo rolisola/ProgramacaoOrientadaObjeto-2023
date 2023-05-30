@@ -49,7 +49,7 @@ public class ManipulaNome {
         return false;
     }
 
-    private static String removerPreposicaoSobrenome(String sobrenome) {
+    private String removerPreposicaoSobrenome(String sobrenome) {
         String[] preposicoes = {"DE", "DO", "DA", "DOS", "DAS"};
         for (String preposicao : preposicoes) {
             if (sobrenome.toUpperCase().startsWith(preposicao)) {
